@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h3>Для проверки можете скопировать эту строку и добавить в URL:</h3>
+  <p>?size=M&color=1&color=2&manufacturer=aaa&manufacturer=ddd</p>
+  <section id="container">
+    <div id="size_block">
+      <p><b>URL size</b></p>
+      <p><input class="size" name="size" type="radio" value="S">S</p>
+      <p><input class="size" name="size" type="radio" value="M">M</p>
+      <p><input class="size" name="size" type="radio" value="L">L</p>
+    </div>
+    <p><b>URL color</b></p>
+    <p>
+    <div id="color_block">
+      <input class="color" type="checkbox" name="color1" value="1">1<Br>
+      <input class="color" type="checkbox" name="color2" value="2">2<Br>
+      <input class="color" type="checkbox" name="color3" value="3">3<Br>
+      <input class="color" type="checkbox" name="color4" value="4">4<Br>
+      <input class="color" type="checkbox" name="color5" value="5">5
+      </p>
+    </div>
+    <p><b>URL manufacturer</b></p>
+    <p><select name="manuf[]" id="manufacturer" multiple size="4">
+        <option>aaa</option>
+        <option>b&c</option>
+        <option>ddd</option>
+        <option>eee</option>
+      </select></p>
+  </section>
+  <p><b>SALE%</b></p>
+  <input class="sale" type="checkbox" name="sale" value="-1">
+
+  <script src="index.js"></script>
+</body>
+
+</html>
